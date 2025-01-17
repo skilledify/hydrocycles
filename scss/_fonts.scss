@@ -1,0 +1,166 @@
+@font-face {
+     font-family: "Barlow";
+     font-style: normal;
+     font-weight: 300;
+     font-display: swap;
+     /* Браузер сначала попробует найти шрифт локально */
+     src: local("Barlow"),
+          /* Если не получилось, загрузит woff2 */
+          url("../fonts/Barlow-Light.woff2") format("woff2"),
+          /* Если браузер не поддерживает woff2, загрузит woff */
+          url("../fonts/Barlow-Light.woff") format("woff");
+
+}
+
+@font-face {
+     font-family: "Barlow";
+     font-style: normal;
+     font-weight: 400;
+     font-display: swap;
+     /* Браузер сначала попробует найти шрифт локально */
+     src: local("Barlow"),
+          /* Если не получилось, загрузит woff2 */
+          url("../fonts/Barlow-Regular.woff2") format("woff2"),
+          /* Если браузер не поддерживает woff2, загрузит woff */
+          url("../fonts/Barlow-Regular.woff") format("woff");
+}
+
+
+
+@font-face {
+     font-family: "Barlow";
+     font-style: normal;
+     font-weight: 600;
+     font-display: swap;
+     /* Браузер сначала попробует найти шрифт локально */
+     src: local("Barlow"),
+          /* Если не получилось, загрузит woff2 */
+          url("../fonts/Barlow-SemiBold.woff2") format("woff2"),
+          /* Если браузер не поддерживает woff2, загрузит woff */
+          url("../fonts/Barlow-SemiBold.woff") format("woff");
+}
+
+@font-face {
+     font-family: "Barlow";
+     font-style: normal;
+     font-weight: 700;
+     font-display: swap;
+     /* Браузер сначала попробует найти шрифт локально */
+     src: local("Barlow"),
+          /* Если не получилось, загрузит woff2 */
+          url("../fonts/Barlow-Bold.woff2") format("woff2"),
+          /* Если браузер не поддерживает woff2, загрузит woff */
+          url("../fonts/Barlow-Bold.woff") format("woff");
+}
+
+
+@font-face {
+     font-family: "Proxima Nova";
+     font-style: normal;
+     font-weight: 600;
+     font-display: swap;
+     /* Браузер сначала попробует найти шрифт локально */
+     src: local("Proxima Nova"),
+          /* Если не получилось, загрузит woff2 */
+          url("../fonts/ProximaNova-SemiBold.woff2") format("woff2"),
+          /* Если браузер не поддерживает woff2, загрузит woff */
+          url("../fonts/ProximaNova-SemiBold.woff") format("woff");
+}
+
+@font-face {
+     font-family: "Proxima Nova";
+     font-style: normal;
+     font-weight: 700;
+     font-display: swap;
+     /* Браузер сначала попробует найти шрифт локально */
+     src: local("Proxima Nova"),
+          /* Если не получилось, загрузит woff2 */
+          url("../fonts/ProximaNova-Bold.woff2") format("woff2"),
+          /* Если браузер не поддерживает woff2, загрузит woff */
+          url("../fonts/ProximaNova-Bold.woff") format("woff");
+}
+
+
+
+
+
+@font-face {
+     font-family: "SFProDisplay";
+     font-style: normal;
+     font-weight: 400;
+     font-display: swap;
+     /* Браузер сначала попробует найти шрифт локально */
+     src: local("SFProDisplay"),
+          /* Если не получилось, загрузит woff2 */
+          url("../fonts/SFProDisplay-Regular.woff2") format("woff2"),
+          /* Если браузер не поддерживает woff2, загрузит woff */
+          url("../fonts/SFProDisplay-Regular.woff") format("woff");
+}
+
+
+
+@font-face {
+     font-family: "SFProDisplay";
+     font-style: normal;
+     font-weight: 500;
+     font-display: swap;
+     /* Браузер сначала попробует найти шрифт локально */
+     src: local("SFProDisplay"),
+          /* Если не получилось, загрузит woff2 */
+          url("../fonts/SFProDisplay-Medium.woff2") format("woff2"),
+          /* Если браузер не поддерживает woff2, загрузит woff */
+          url("../fonts/SFProDisplay-Medium.woff") format("woff");
+}
+
+
+
+@font-face {
+     font-family: "SFProDisplay";
+     font-style: normal;
+     font-weight: 600;
+     font-display: swap;
+     /* Браузер сначала попробует найти шрифт локально */
+     src: local("SFProDisplay"),
+          /* Если не получилось, загрузит woff2 */
+          url("../fonts/SFProDisplay-SemiBold.woff2") format("woff2"),
+          /* Если браузер не поддерживает woff2, загрузит woff */
+          url("../fonts/SFProDisplay-SemiBold.woff") format("woff");
+}
+
+
+@font-face {
+     font-family: "SFProDisplay";
+     font-style: normal;
+     font-weight: 700;
+     font-display: swap;
+     /* Браузер сначала попробует найти шрифт локально */
+     src: local("SFProDisplay"),
+          /* Если не получилось, загрузит woff2 */
+          url("../fonts/SFProDisplay-Bold.woff2") format("woff2"),
+          /* Если браузер не поддерживает woff2, загрузит woff */
+          url("../fonts/SFProDisplay-Bold.woff") format("woff");
+}
+
+
+@font-face {
+     font-family: "Staatliches";
+     font-style: normal;
+     font-weight: 400;
+     font-display: swap;
+     /* Браузер сначала попробует найти шрифт локально */
+     src: local("Staatliches"),
+          /* Если не получилось, загрузит woff2 */
+          url("../fonts/Staatliches-Regular.woff2") format("woff2"),
+          /* Если браузер не поддерживает woff2, загрузит woff */
+          url("../fonts/Staatliches-Regular.woff") format("woff");
+}
+
+
+
+
+
+// @import url("https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&display=swap");
+
+
+
+// @import url("")

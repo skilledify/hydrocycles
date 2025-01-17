@@ -1,0 +1,86 @@
+.search {
+
+
+   // &__inner {
+
+   // }
+
+   &__tabs {
+      margin-bottom: 25px;
+   }
+
+   &__tabs-item {
+      padding: 11px 26px 12px;
+      color: rgb(47, 48, 53);
+      font-family: "SF Pro Display";
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0%;
+      text-align: left;
+
+   }
+
+   &__tabs-item.tab--active {
+      background: #F0F0F4;
+      border-radius: 5px;
+      font-weight: 700;
+   }
+
+   // &__content {
+
+   // }
+
+   .tabs-content {
+      display: none;
+   }
+
+   .tabs-content.tabs-content--active {
+      display: block;
+   }
+
+
+   &__content-form {
+      display: flex;
+   }
+
+   &__content-input {
+      width: 100%;
+      background-color: #F0F0F4;
+      border-radius: 3px;
+      padding: 15px 20px;
+      border: none;
+      font-family: 'SF Pro Display';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: #2F3035;
+
+      &::placeholder {
+         font-family: 'SF Pro Display';
+         font-style: normal;
+         font-weight: 400;
+         font-size: 16px;
+         line-height: 19px;
+         color: #656464;
+
+      }
+
+   }
+
+   &__content-btn {
+      cursor: pointer;
+      font-family: 'SF Pro Display';
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      background: #1C62CD;
+      border-radius: 3px;
+      padding: 17px 40px;
+      border: none;
+   }
+}
