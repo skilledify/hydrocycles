@@ -1,0 +1,324 @@
+.products {
+   margin-bottom: 86px;
+
+   // &__inner {
+
+   // }
+
+   &__tabs {
+      display: flex;
+      gap: 50px;
+      margin-bottom: 25px;
+   }
+
+   &__tab {
+      padding-bottom: 10px;
+   }
+
+   &__tab.tab--active {
+      border-bottom: 2px solid #1C62CD;
+   }
+
+
+   &__container {
+      margin-bottom: 35px;
+   }
+
+   &__content {
+      display: none;
+   }
+
+   &__content.tabs-content--active {
+      display: block;
+   }
+
+   &__more {
+      text-align: center;
+   }
+
+   &__more-link {
+      font-family: 'SF Pro Display';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 18px;
+      text-align: center;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #2F3035;
+      padding: 17px 43px;
+      background-color: #F0F0F4;
+   }
+
+}
+
+
+
+
+
+
+
+
+.product-slider {
+   max-width: 1200px;
+   width: 100%;
+
+}
+
+
+.product-item {
+   position: relative;
+   border: 1px solid #CDCDCD;
+   border-radius: 3px;
+   min-height: 400px;
+   text-align: center;
+   padding: 52px 20px 31px;
+   transition: all .3s;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+
+   &:hover {
+      background: #FFFFFF;
+      box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+      border-radius: 3px;
+   }
+
+
+   &__wrapper {
+      position: relative;
+      width: 271px;
+      transition: all .5s;
+
+   }
+
+
+
+   &__favorite {
+      cursor: pointer;
+      position: absolute;
+      top: 16px;
+      right: 19px;
+      width: 24px;
+      height: 22px;
+      border: none;
+      background-color: transparent;
+      z-index: 5;
+      background-image: url("../images/icon-heart-outline.svg");
+      background-repeat: no-repeat;
+
+      &::before {
+         content: "";
+         position: absolute;
+         width: 24px;
+         height: 22px;
+         top: 0;
+         left: 1px;
+      }
+   }
+
+   &__img {
+      margin: 0 auto;
+   }
+
+
+   &__title {
+      font-family: "SF Pro Display";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+      text-align: center;
+      color: #2F3035;
+      max-width: 230px;
+      padding: 14px 0 25px;
+      min-height: 44px;
+   }
+
+   &__price {
+      font-family: "Barlow";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 36px;
+      text-align: center;
+      color: #2F3035;
+   }
+
+
+   &__basket {
+      position: absolute;
+      right: 0px;
+      bottom: 0px;
+      width: 60px;
+      height: 40px;
+      color: #FFFFFF;
+      background-color: #1C62CD;
+      border-radius: 10px 0px 0px 0px;
+      border: none;
+      z-index: 5;
+
+      &::after {
+         content: "";
+         position: absolute;
+         width: 30px;
+         height: 23px;
+         background-image: url("../images/basket-white.svg");
+         background-repeat: no-repeat;
+         top: 10px;
+         left: 14px;
+         padding-top: 7px;
+         cursor: pointer;
+
+      }
+
+   }
+}
+
+
+
+
+
+
+
+// .price {
+// }
+
+
+.product-item__favorite--active {
+   cursor: pointer;
+   background-image: url("../images/icon-heart-filled.svg");
+   background-repeat: no-repeat;
+}
+
+.product-item__hover-text {
+   padding: 18px 21px;
+   background-color: rgba(255, 255, 255, .9);
+   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+   border-radius: 3px;
+   position: absolute;
+   top: 30%;
+   right: 30px;
+   transition: all .3s;
+   opacity: 0;
+}
+
+.product-item__hover-text:hover.product-item__hover-text {
+   opacity: 1;
+   color: #2F3035;
+}
+
+.product-item:hover .product-item__title {
+   color: #1C62CD;
+}
+
+.product-item:hover .product-item__price {
+   color: #1C62CD;
+}
+
+
+.product-item--sale::before {
+   content: "SALE";
+   position: absolute;
+   padding: 8px 15px;
+   background-color: #1C62CD;
+   position: absolute;
+   left: 0;
+   top: 0;
+   text-transform: uppercase;
+   color: #FFFFFF;
+   font-family: 'SF Pro Display';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 14px;
+   letter-spacing: 0.07em;
+}
+
+
+.product-item__wrapper.product-item__not-available .product-item__price {
+   display: none;
+}
+
+
+.product-item__notify-text {
+   display: none;
+   font-weight: 700;
+   line-height: 21px;
+   text-align: center;
+   margin-bottom: 13px;
+   color: rgb(47, 48, 53);
+   font-family: "SF Pro Display";
+   font-size: 18px;
+   letter-spacing: 0%;
+
+}
+
+.product-item__wrapper.product-item__not-available .product-item__notify-text {
+   display: block;
+}
+
+.product-item__wrapper.product-item__not-available .product-item__basket {
+   display: none;
+}
+
+.product-item:hover .product-item__notify-text {
+   color: #2F3035;
+}
+
+
+.product-item__notify-link {
+   display: none;
+}
+
+
+.product-item__wrapper.product-item__not-available .product-item__notify-link {
+   display: block;
+   position: absolute;
+   bottom: 20px;
+   color: #1C62CD;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 19px;
+   text-align: center;
+   left: 0;
+   right: 0;
+}
+
+.product-item__wrapper.product-item__not-available .product-item__notify-link span {
+   border-bottom: 1px solid #1C62CD;
+}
+
+.product-item__wrapper.product-item__not-available .product-item__title {
+   padding-bottom: 13px;
+}
+
+
+
+.products__title {
+   font-family: 'Barlow';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 25px;
+   line-height: 30px;
+   color: #2F3035;
+   margin-bottom: 25px;
+
+}
+
+
+
+.product-slider__slider-btnprev {
+   left: -40px;
+}
+
+
+.product-slider__slider-btnnext {
+   right: -30px;
+}
+
+
+.product-item__wrapper.product-item__wrapper--list .product-item__title {
+   max-width: 100%;
+
+}

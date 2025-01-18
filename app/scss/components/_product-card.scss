@@ -1,0 +1,411 @@
+.product-card {
+
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+      padding: 34px 0 80px 0;
+      gap: 15px;
+   }
+
+
+   &__img-box {
+      // min-height: 590px;
+      width: 500px;
+      text-align: center;
+      position: relative;
+
+      &::before {
+         font-size: 15px;
+         line-height: 18px;
+         letter-spacing: 0.12em;
+         padding: 13px 25px;
+         border-radius: 3px;
+      }
+   }
+
+   &__img {
+      padding-top: 74px;
+      margin-bottom: 17px;
+   }
+
+
+
+   &__price-old {
+      font-family: 'Barlow';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 44px;
+      color: #000000;
+      opacity: 0.6;
+      background-image: url('../images/old-line.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: inline-block;
+   }
+
+
+   &__price-new {
+      font-family: 'Barlow';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 48px;
+      color: #2F3035;
+      margin-bottom: 17px;
+
+   }
+
+   &__link {
+      font-family: 'SF Pro Display';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 18px;
+      color: #1C62CD;
+   }
+
+   &__content {
+      width: 570px;
+   }
+
+   &__title {
+      font-family: 'SF Pro Display';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 36px;
+      color: #2F3035;
+      margin-bottom: 10px;
+   }
+
+   &__code {
+      font-family: 'SF Pro Display';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 18px;
+      color: #2F3035;
+      opacity: 0.6;
+      margin-bottom: 22px;
+   }
+
+   &__buttons {
+      display: flex;
+      align-items: center;
+      margin-bottom: 51px;
+   }
+
+
+   &__icon-favorite {
+      margin-right: 29px;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+   }
+
+
+   &__icon-comparison {
+      margin-right: 25px;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+   }
+
+   &__tabs {
+      margin-bottom: 25px;
+      max-width: 436px;
+
+   }
+
+   &__tab {
+      padding-bottom: 5px;
+      margin-right: 34px;
+      font-family: 'SF Pro Display';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      color: #2F3035;
+      opacity: 0.6;
+   }
+
+   // &__tabs-content {
+   // }
+
+   &__list {
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 0 6px;
+      border-bottom: 1px solid rgba(47, 48, 53, 0.1);
+   }
+
+
+   &__list-title {
+      font-family: 'SF Pro Display';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      color: #2F3035;
+      padding-right: 15px;
+   }
+
+   &__list-data {
+      font-family: 'SF Pro Display';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      color: #2F3035;
+      width: 125px;
+
+   }
+
+   &__more {
+      margin-top: 20px;
+      margin-bottom: 45px;
+   }
+
+   // &__more-btn {
+   // }
+
+   &__btn button {
+      padding: 16px 53px;
+      background-color: #1C62CD;
+      font-family: 'SF Pro Display';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      text-align: center;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      margin-top: 30px;
+      cursor: pointer;
+
+   }
+
+   &__btn-mobile {
+      display: none;
+   }
+
+}
+
+
+.product-card__tab.tab--active {
+   font-family: 'SF Pro Display';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 24px;
+   color: #2F3035;
+   opacity: 1;
+   border-bottom: 2px solid #1C62CD;
+}
+
+.product-card__tabs-content {
+   display: none;
+}
+
+.product-card__tabs-content.tabs-content--active {
+   display: block;
+}
+
+
+
+
+.card {
+   margin-bottom: 100px;
+
+   &__tabsbox {
+      margin-bottom: 100px;
+   }
+
+   &__tabs {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      background-color: #F0F0F4;
+      padding: 22px 0;
+      margin-bottom: 50px;
+   }
+
+   &__tab {
+      font-family: 'SF Pro Display';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      color: #2F3035;
+      opacity: 0.6;
+
+   }
+
+   &__tab.tab--active {
+      color: #2F3035;
+      opacity: 1;
+      border-bottom: 1px solid #1C62CD;
+
+   }
+
+   // &__tabs-container {
+   // }
+
+   &__tabs-content {
+      display: none;
+   }
+
+   &__tabs-content.tabs-content--active {
+      display: block;
+      padding-left: 38px;
+   }
+
+
+
+   &__top-line {
+      margin-bottom: 10px;
+   }
+
+   &__form {
+      position: relative;
+
+
+   }
+
+   &__form-labelsearch {
+      font-family: 'SF Pro Display';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 20px;
+      color: rgba(47, 48, 53, 0.7);
+   }
+
+   &__form-inputsearch {
+      margin-left: 17px;
+      background: #F0F0F4;
+      border-radius: 3px;
+      padding: 8px 37px 8px 17px;
+      border: none;
+      margin-right: 100px;
+
+   }
+
+   &__form-labelpickup {
+      font-family: 'SF Pro Display';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 20px;
+      color: rgba(47, 48, 53, 0.7);
+      margin-left: 15px;
+   }
+
+   &__form-inputpickup {
+      margin-left: 54px;
+   }
+
+   // &__list {
+
+   // }
+
+   &__list-item {
+      padding: 20px 0;
+      border-bottom: 1px solid rgba(47, 48, 53, 0.1);
+      display: flex;
+      font-family: 'SF Pro Display';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      color: rgba(47, 48, 53, 0.7);
+   }
+
+
+
+   &__list-address {
+      width: 220px;
+      margin-right: 80px;
+   }
+
+   // &__list-addresstitle {
+   // }
+
+   // &__workhours {
+
+
+   // }
+
+   &__list-avialable {
+      margin-right: 60px;
+      width: 140px;
+   }
+
+
+   &__list-num {
+      width: 104px;
+   }
+
+
+   &__form-btn {
+      margin-left: auto;
+   }
+
+   &__form-btn button {
+      font-family: 'SF Pro Display';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 16px;
+      letter-spacing: 0.12em;
+      color: #FFFFFF;
+      background-color: #1C62CD;
+      padding: 10px 40px;
+      cursor: pointer;
+   }
+
+
+
+   &__list-workhours {
+      margin-right: 80px;
+      width: 173px;
+      // span{
+
+      // }
+   }
+
+
+}
+
+
+.workhours {
+   display: flex;
+   justify-content: space-between;
+}
+
+// .container {
+// }
+// .tabs {
+// }
+// .tab {
+// }
+// .tab--active {
+// }
+// .tabs-container {
+// }
+// .tabs-content {
+// }
+// .tabs-content--active {
+// }
+
+
+.card__list-itemtitle {
+   font-family: 'SF Pro Display';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 24px;
+   color: #2F3035;
+}

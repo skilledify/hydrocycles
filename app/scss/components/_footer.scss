@@ -1,0 +1,130 @@
+.footer {
+   background-color: #F0F0F4;
+
+   &__top {
+      padding-top: 43px;
+   }
+
+   &__top-inner {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+   }
+
+   &__top-item {
+      margin-right: 30px;
+
+      &:first-child{
+         max-width: 295px;
+        
+      }
+      &:nth-child(2){
+         max-width: 104px;
+         margin-right: 30px;
+      }
+      &:nth-child(2){
+         max-width: 141px;
+         
+      }
+      &:last-child{
+         max-width: 210px;
+         margin-right: 76px;
+      
+      }
+   }
+
+   &__top-title {
+      font-family: 'SF Pro Display';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+      color: #2F3035;
+   }
+
+   &__bottom {
+      padding: 46px 0 22px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      
+   }
+
+   &__bottom-link {
+      line-height: 12px;
+      color: #48494D;
+      font-size: 10px;
+      margin: 0 40px;
+      white-space: nowrap;
+   }
+}
+
+
+.footer-form {
+   margin-top: 34px;
+   display: flex;
+   justify-content: space-between;
+
+   &__input {
+      width: 185px;
+      padding: 0 12px;
+      line-height: 17px;
+      background-color: #FFFFFF;
+      border: none;
+      font-size: 14px;
+      color: #2F3035;
+
+      &::placeholder{
+         font-family: 'SF Pro Display';
+         font-style: normal;
+         font-weight: 400;
+         font-size: 14px;
+         line-height: 17px;
+         color: #C4C4C4;
+      }
+   }
+
+   &__btn {
+      cursor: pointer;
+      padding: 10px 16px;
+      border: none;
+      font-family: 'SF Pro Display';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 11px;
+      line-height: 13px;
+      text-align: center;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      background-color: #1C62CD;
+      color: #FFFFFF;
+   }
+}
+
+.footer-list {
+      font-size: 14px;
+      line-height: 22px;
+
+   // &__item {
+
+   // }
+}
+
+
+
+.social-list {
+
+   display: flex;
+   gap: 30px;
+   align-items: center;
+   height: 100%;
+   // &__item {
+  
+   // }
+
+   // &__item-link {
+   // }
+
+   // &__item-img {
+   // }
+}

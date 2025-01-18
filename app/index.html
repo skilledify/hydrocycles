@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hydrocycles</title>
+    <link rel="preload" href="fonts/Barlow-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Barlow-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Barlow-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Barlow-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ProximaNova-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ProximaNova-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/SFProDisplay-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/SFProDisplay-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/SFProDisplay-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/SFProDisplay-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Staatliches-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__top">
+                <div class="container">
+                    <div class="header__top-inner">
+
+                        <nav class="menu">
+                            <button class="menu__btn">
+                                <div class="menu__btn-line"></div>
+                                <div class="menu__btn-line"></div>
+                                <div class="menu__btn-line"></div>
+                            </button>
+
+                            <ul class="menu__list">
+                                <li class="menu__item"><a class="menu__link" href="#">Магазины</a></li>
+                                <li class="menu__item"><a class="menu__link" href="#">Акции</a></li>
+                                <li class="menu__item"><a class="menu__link" href="#">Доставка и оплата</a></li>
+                            </ul>
+                        </nav>
+                        <a class="logo" href="#">
+                            <img class="logo__img" src="images/logo.svg" alt="logo">
+                        </a>
+                        <div class="header__box">
+                            <p class="header__address">
+                                Москва, ул. Науки 25
+                            </p>
+                            <ul class="user-list">
+                                <li class="user-list__item">
+                                    <a class="user-list__link" href="#">
+                                        <img src="images/icon-heart-outline.svg" alt="icon-heart-outline">
+                                    </a>
+                                </li>
+                                <li class="user-list__item">
+                                    <a class="user-list__link" href="#">
+                                        <img src="images/user.svg" alt="user">
+                                    </a>
+                                </li>
+                                <li class="user-list__item">
+                                    <a class="user-list__link basket" href="#">
+                                        <img src="images/basket.svg" alt="basket">
+                                        <p class="basket__num">1</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="menu-mobile__list">
+                <li class="menu-mobile__item">
+                    <a class="menu-mobile__link" href="#">
+                        <img class="menu-mobile__img" src="images/user.svg" alt="user">
+                        <p class="menu-mobile__text">Войти</p>
+                    </a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a class="menu-mobile__link" href="#">
+                        <img class="menu-mobile__img" src="images/user.svg" alt="user">
+                        <p class="menu-mobile__text">Регистрация</p>
+                    </a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a class="menu-mobile__link" href="#">
+                        <img class="menu-mobile__img" src="images/icon-heart-outline.svg" alt="icon-heart-outline">
+                        <p class="menu-mobile__text">Избранное</p>
+                    </a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a class="menu-mobile__link" href="#">
+                        <img class="menu-mobile__img" src="images/basket.svg" alt="basket">
+                        <p class="menu-mobile__text">Корзина</p>
+                    </a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a class="menu-mobile__link" href="#">
+                        <img class="menu-mobile__img" src="images/home.svg" alt="shop">
+                        <p class="menu-mobile__text">Магазины</p>
+                    </a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a class="menu-mobile__link" href="#">
+                        <img class="menu-mobile__img" src="images/procents.svg" alt="sales">
+                        <p class="menu-mobile__text">Акции</p>
+                    </a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a class="menu-mobile__link" href="#">
+                        <img class="menu-mobile__img" src="images/delivery.svg" alt="delivery">
+                        <p class="menu-mobile__text">Доставка и оплата</p>
+                    </a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a class="menu-mobile__link" href="#">
+                        <p class="menu-mobile__text">Квадроциклы</p>
+                    </a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a class="menu-mobile__link" href="#">
+                        <p class="menu-mobile__text">Катера</p>
+                    </a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a class="menu-mobile__link" href="#">
+                        <p class="menu-mobile__text">Гидроциклы</p>
+                    </a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a class="menu-mobile__link" href="#">
+                        <p class="menu-mobile__text">Лодки</p>
+                    </a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a class="menu-mobile__link" href="#">
+                        <p class="menu-mobile__text">Вездеходы</p>
+                    </a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a class="menu-mobile__link" href="#">
+                        <p class="menu-mobile__text">Снегопады</p>
+                    </a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a class="menu-mobile__link" href="#">
+                        <p class="menu-mobile__text">Двигатели</p>
+                    </a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a class="menu-mobile__link" href="#">
+                        <p class="menu-mobile__text">Запчасти</p>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="menu__mobile-linewrapper">
+                <ul class="menu__mobile-line">
+                    <li class="menu__item"><a class="menu__link" href="#">Магазины</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Акции</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Доставка и оплата</a></li>
+                </ul>
+            </div>
+            <div class="header__bottom">
+                <div class="container">
+                    <ul class="menu-categories">
+                        <li class="menu-categories__item"><a class="menu-categories__link" href="#">Квадроциклы</a></li>
+                        <li class="menu-categories__item"><a class="menu-categories__link" href="#">Катера</a></li>
+                        <li class="menu-categories__item"><a class="menu-categories__link" href="#">Гидроциклы</a></li>
+                        <li class="menu-categories__item"><a class="menu-categories__link" href="#">Лодки</a></li>
+                        <li class="menu-categories__item"><a class="menu-categories__link" href="#">Вездеходы</a></li>
+                        <li class="menu-categories__item"><a class="menu-categories__link" href="#">Снегоходы</a></li>
+                        <li class="menu-categories__item"><a class="menu-categories__link" href="#">Двигатели</a></li>
+                        <li class="menu-categories__item"><a class="menu-categories__link" href="#">Запчасти</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="banner-section page-section">
+                <div class="container">
+                    <div class="banner-section__inner">
+                        <div class="banner-section__slider">
+                            <a class="banner-section__slider-item" href="#">
+                                <img class="banner-section__slider-img" src="images/banner-slider.jpg" alt="">
+                            </a>
+                            <a class="banner-section__slider-item" href="#">
+                                <img class="banner-section__slider-img" src="images/banner-slider.jpg" alt="">
+                            </a>
+                            <a class="banner-section__slider-item" href="#">
+                                <img class="banner-section__slider-img" src="images/banner-slider.jpg" alt="">
+                            </a>
+                            <a class="banner-section__slider-item" href="#">
+                                <img class="banner-section__slider-img" src="images/banner-slider.jpg" alt="">
+                            </a>
+                            <a class="banner-section__slider-item" href="#">
+                                <img class="banner-section__slider-img" src="images/banner-slider.jpg" alt="">
+                            </a>
+                            <a class="banner-section__slider-item" href="#">
+                                <img class="banner-section__slider-img" src="images/banner-slider.jpg" alt="">
+                            </a>
+                        </div>
+                        <a class="banner-section__item sale-item" href="#">
+                            <div class="sale-item__top">
+                                <div class="sale-item__info">
+                                    акция
+                                </div>
+                                <div class="sale-item__price">
+                                    <div class="price sale-item__price-new">190 000</div>
+                                    <div class="price sale-item__price-old">225 000</div>
+                                </div>
+                            </div>
+                            <img class="sale-item__img" src="images/content/sale-1.png" alt="sale 1">
+                            <h5 class="sale-item__title">Лодочный мотор
+                                Suzuki DF9.9BRS
+                            </h5>
+                            <div class="sale-item__footer">
+                                Акция действует до
+                                <span>31.08.2020</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <div class="search page-section ">
+                <div class="container">
+                    <div class="search__inner">
+                        <div class="search__tabs tabs-wrapper">
+                            <div class="mobile-overflow">
+                                <a class="tab search__tabs-item" href="#tab-1">Поиск по номеру</a>
+                                <a class="tab search__tabs-item tab--active" href="#tab-2">Поиск по марке</a>
+                                <a class="tab search__tabs-item" href="#tab-3">Поиск но названию товара</a>
+                            </div>
+                        </div>
+
+                        <div class="search__content">
+                            <div id="tab-1" class="tabs-content search__content-item ">
+                                <form class="search__content-form">
+                                    <input class="search__content-input" type="text" placeholder="Введите номер">
+                                    <button class="search__content-btn" type="submit">искать</button>
+                                </form>
+                            </div>
+                            <div id="tab-2" class="tabs-content search__content-item  tabs-content--active">
+                                <form class="search__content-form">
+                                    <input class="search__content-input" type="text" placeholder="Введите марку">
+                                    <button class="search__content-btn" type="submit">искать</button>
+                                </form>
+                            </div>
+                            <div id="tab-3" class="tabs-content  search__content-item">
+                                <form class="search__content-form">
+                                    <input class="search__content-input" type="text"
+                                        placeholder="Введите название товара">
+                                    <button class="search__content-btn" type="submit">искать</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <section class="categories ">
+                <div class="container">
+                    <div class="categories__inner">
+                        <a class="categories__item" href="#">
+                            <div class="categories__item-info">
+                                <h4 class="categories__item-title">Квадроциклы</h4>
+                                <p class="categories__item-text">Подробнее</p>
+                            </div>
+                            <div class="categories__item-img">
+                                <img src="images/categories-1.png" alt="categories 1">
+                            </div>
+                        </a>
+                        <a class="categories__item" href="#">
+                            <div class="categories__item-info">
+                                <h4 class="categories__item-title">Гидроциклы</h4>
+                                <p class="categories__item-text">Подробнее</p>
+                            </div>
+                            <div class="categories__item-img">
+                                <img src="images/categories-2.png" alt="categories 2">
+                            </div>
+                        </a>
+                        <a class="categories__item" href="#">
+                            <div class="categories__item-info">
+                                <h4 class="categories__item-title">Катера</h4>
+                                <p class="categories__item-text">Подробнее</p>
+                            </div>
+                            <div class="categories__item-img">
+                                <img src="images/categories-3.png" alt="categories 3">
+                            </div>
+                        </a>
+                        <a class="categories__item" href="#">
+                            <div class="categories__item-info">
+                                <h4 class="categories__item-title">Снегоходы</h4>
+                                <p class="categories__item-text">Подробнее</p>
+                            </div>
+                            <div class="categories__item-img">
+                                <img src="images/categories-4.png" alt="categories 4">
+                            </div>
+                        </a>
+                        <a class="categories__item" href="#">
+                            <div class="categories__item-info">
+                                <h4 class="categories__item-title">Вездеходы</h4>
+                                <p class="categories__item-text">Подробнее</p>
+                            </div>
+                            <div class="categories__item-img">
+                                <img src="images/categories-5.png" alt="categories 5">
+                            </div>
+                        </a>
+                        <a class="categories__item" href="#">
+                            <div class="categories__item-info">
+                                <h4 class="categories__item-title">Двигатели</h4>
+                                <p class="categories__item-text">Подробнее</p>
+                            </div>
+                            <div class="categories__item-img">
+                                <img src="images/categories-6.png" alt="categories 6">
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </section>
+            <section class="products ">
+                <div class="container">
+                    <div class="products__inner">
+                        <h2 class="products__title">Популярные товары</h2>
+                        <div class="tabs-wrapper ">
+                            <div class="tabs products__tabs mobile-overflow">
+                                <a class="tab products__tab products__tab--active tab--active"
+                                    href="#products-tab-1">запчасти</a>
+                                <a class="tab products__tab" href="#products-tab-2">моторы</a>
+                                <a class="tab products__tab" href="#products-tab-3">шины</a>
+                                <a class="tab products__tab" href="#products-tab-4">электроника</a>
+                                <a class="tab products__tab" href="#products-tab-5">инструменты</a>
+                                <a class="tab products__tab" href="#products-tab-6">аксессуары</a>
+                            </div>
+                        </div>
+                        <div class="tabs-container products__container">
+                            <div class="tabs-content products__content tabs-content--active" id="products-tab-1">
+                                <div class="splide" aria-label="products-slider">
+                                    <div class="splide__arrows splide__arrows--ltr">
+                                        <button class="splide__arrow splide__arrow--prev" type="button"
+                                            aria-label="Previous slide" aria-controls="splide01-track">
+                                            <svg width="15.181519" height="28.386383" viewBox="0 0 15.1815 28.3864"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <desc>
+                                                    Created with Pixso.
+                                                </desc>
+                                                <defs />
+                                                <path id="Vector"
+                                                    d="M1.96 14.19L14.94 1.37C15.26 1.05 15.26 0.55 14.94 0.23C14.62 -0.08 14.11 -0.08 13.79 0.23L0.23 13.62C-0.08 13.94 -0.08 14.44 0.23 14.76L13.79 28.14C13.94 28.3 14.15 28.38 14.36 28.38C14.56 28.38 14.77 28.3 14.93 28.14C15.25 27.83 15.25 27.32 14.93 27.01L1.96 14.19Z"
+                                                    fill="#2F3035" fill-opacity="1.000000" fill-rule="nonzero" />
+                                            </svg>
+
+
+                                        </button>
+                                        <button class="splide__arrow splide__arrow--next" type="button"
+                                            aria-label="Next slide" aria-controls="splide01-track">
+                                            <svg width="15.181641" height="28.386375" viewBox="0 0 15.1816 28.3864"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <desc>
+                                                    Created with Pixso.
+                                                </desc>
+                                                <defs />
+                                                <path id="Vector"
+                                                    d="M13.21 14.19L0.23 27.01C-0.08 27.32 -0.08 27.83 0.23 28.14C0.55 28.46 1.07 28.46 1.38 28.14L14.94 14.75C15.26 14.44 15.26 13.93 14.94 13.62L1.38 0.23C1.23 0.08 1.02 0 0.81 0C0.61 0 0.4 0.07 0.24 0.23C-0.08 0.55 -0.08 1.05 0.24 1.37L13.21 14.19Z"
+                                                    fill="#2F3035" fill-opacity="1.000000" fill-rule="nonzero" />
+                                            </svg>
+
+                                        </button>
+                                    </div>
+                                    <div class="splide__track">
+
+                                        <ul class="splide__list">
+                                            <li class="splide__slide">
+                                                <div class="product-slider__item">
+                                                    <div class="product-item__wrapper ">
+                                                        <button type="button"
+                                                            class="product-item__favorite favorite-btn"></button>
+                                                        <button class="product-item__basket">
+
+                                                        </button>
+                                                        <a class="product-item__notify-link" href="#">
+                                                            <span>Сообщить о поступлении</span> </a>
+                                                        <a class="product-item " href="#">
+                                                            <p class="product-item__hover-text">посмотреть товар</p>
+                                                            <img class="product-item__img"
+                                                                src="images/content/product-1.png" alt="">
+                                                            <h4 class="product-item__title">Водонепроницаемый Рюкзак
+                                                            </h4>
+                                                            <p class=" price product-item__price">9 800 ₽</p>
+                                                            <p class="product-item__notify-text">нет в наличии</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="splide__slide">
+                                                <div class="product-slider__item">
+                                                    <div class="product-item__wrapper ">
+                                                        <button type="button"
+                                                            class="product-item__favorite favorite-btn"></button>
+                                                        <button class="product-item__basket">
+
+                                                        </button>
+                                                        <a class="product-item__notify-link" href="#">
+                                                            <span>Сообщить о поступлении</span> </a>
+                                                        <a class="product-item product-item--sale" href="#">
+                                                            <p class="product-item__hover-text">посмотреть товар</p>
+                                                            <img class="product-item__img"
+                                                                src="images/content/product-2.png" alt="">
+                                                            <h4 class="product-item__title">Спасательный жилет BRP Men's
+                                                                Airflow
+                                                                PFD
+                                                            </h4>
+                                                            <p class=" price product-item__price">6 900 ₽</p>
+                                                            <p class="product-item__notify-text">нет в наличии</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="splide__slide">
+                                                <div class="product-slider__item">
+                                                    <div class="product-item__wrapper ">
+                                                        <button type="button"
+                                                            class="product-item__favorite favorite-btn"></button>
+                                                        <button class="product-item__basket"></button>
+                                                        <a class="product-item__notify-link" href="#">
+                                                            <span>Сообщить о поступлении</span> </a>
+                                                        <a class="product-item " href="#">
+                                                            <p class="product-item__hover-text">посмотреть товар</p>
+                                                            <img class="product-item__img"
+                                                                src="images/content/product-3.png" alt="">
+                                                            <h4 class="product-item__title">
+                                                                BRP Audio-Premium System</h4>
+                                                            <p class=" price product-item__price">68 000 ₽</p>
+                                                            <p class="product-item__notify-text">нет в наличии</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="splide__slide">
+                                                <div class="product-slider__item">
+                                                    <div class="product-item__wrapper product-item__not-available">
+                                                        <button type="button"
+                                                            class="product-item__favorite favorite-btn"></button>
+                                                        <button class="product-item__basket">
+
+                                                        </button>
+                                                        <a class="product-item__notify-link" href="#">
+                                                            <span>Сообщить о поступлении</span> </a>
+                                                        <a class="product-item product-item--sale" href="#">
+                                                            <p class="product-item__hover-text">посмотреть товар</p>
+                                                            <img class="product-item__img"
+                                                                src="images/content/product-4.png" alt="">
+                                                            <h4 class="product-item__title">Спасательное
+                                                                снаряжение</h4>
+                                                            <p class=" price product-item__price">9 800 ₽</p>
+                                                            <p class="product-item__notify-text">нет в наличии</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="splide__slide">
+                                                <div class="product-slider__item">
+                                                    <div class="product-item__wrapper ">
+                                                        <button type="button"
+                                                            class="product-item__favorite favorite-btn"></button>
+                                                        <button class="product-item__basket">
+
+                                                        </button>
+                                                        <a class="product-item__notify-link" href="#">
+                                                            <span>Сообщить о поступлении</span> </a>
+                                                        <a class="product-item " href="#">
+                                                            <p class="product-item__hover-text">посмотреть товар</p>
+                                                            <img class="product-item__img"
+                                                                src="images/content/product-1.png" alt="">
+                                                            <h4 class="product-item__title">Водонепроницаемый Рюкзак
+                                                            </h4>
+                                                            <p class=" price product-item__price">9 800 ₽</p>
+                                                            <p class="product-item__notify-text">нет в наличии</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="splide__slide">
+                                                <div class="product-slider__item">
+                                                    <div class="product-item__wrapper ">
+                                                        <button type="button"
+                                                            class="product-item__favorite favorite-btn"></button>
+                                                        <button class="product-item__basket">
+
+                                                        </button>
+                                                        <a class="product-item__notify-link" href="#">
+                                                            <span>Сообщить о поступлении</span> </a>
+                                                        <a class="product-item product-item--sale" href="#">
+                                                            <p class="product-item__hover-text">посмотреть товар</p>
+                                                            <img class="product-item__img"
+                                                                src="images/content/product-2.png" alt="">
+                                                            <h4 class="product-item__title">Спасательный жилет BRP Men's
+                                                                Airflow
+                                                                PFD
+                                                            </h4>
+                                                            <p class=" price product-item__price">6 900 ₽</p>
+                                                            <p class="product-item__notify-text">нет в наличии</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs-content products__content" id="products-tab-2">
+
+                            </div>
+                            <div class="tabs-content tabs-content--active products__content products__content--active"
+                                id="products-tab-3">
+                            </div>
+                            <div class="tabs-content products__content" id="products-tab-4">
+                            </div>
+                            <div class="tabs-content products__content" id="products-tab-5">
+                            </div>
+                            <div class="tabs-content products__content" id="products-tab-6">
+                            </div>
+                        </div>
+                        <div class="products__more">
+                            <a class="products__more-link" href="#">Показать ещё</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="banner">
+                <div class="container">
+                    <a class="banner__link" href="#">
+                        <img class="banner__link-img" src="images/content/banner.jpg" alt="banner">
+                    </a>
+                </div>
+            </div>
+            <section class="products-popular ">
+                <div class="container">
+                    <div class="products__inner">
+                        <h2 class="products__title">С этими товарами покупают</h2>
+                        <div class="tabs-wrapper ">
+                            <div class="tabs products__tabs mobile-overflow">
+                                <a class="tab products__tab products__tab--active tab--active"
+                                    href="#products-popular-tab-1">запчасти</a>
+                                <a class="tab products__tab" href="#products-popular-tab-2">моторы</a>
+                                <a class="tab products__tab" href="#products-popular-tab-3">шины</a>
+                                <a class="tab products__tab" href="#products-popular-tab-4">электроника</a>
+                                <a class="tab products__tab" href="#products-popular-tab-5">инструменты</a>
+                                <a class="tab products__tab" href="#products-popular-tab-6">аксессуары</a>
+                            </div>
+                        </div>
+                        <div class="tabs-container products__container">
+                            <div class="tabs-content products__content tabs-content--active"
+                                id="products-popular-tab-1">
+                                <div class="splide" aria-label="product-slider">
+                                    <div class="splide__arrows splide__arrows--ltr">
+                                        <button class="splide__arrow splide__arrow--prev" type="button"
+                                            aria-label="Previous slide" aria-controls="splide01-track">
+                                            <svg width="15.181519" height="28.386383" viewBox="0 0 15.1815 28.3864"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <desc>
+                                                    Created with Pixso.
+                                                </desc>
+                                                <defs />
+                                                <path id="Vector"
+                                                    d="M1.96 14.19L14.94 1.37C15.26 1.05 15.26 0.55 14.94 0.23C14.62 -0.08 14.11 -0.08 13.79 0.23L0.23 13.62C-0.08 13.94 -0.08 14.44 0.23 14.76L13.79 28.14C13.94 28.3 14.15 28.38 14.36 28.38C14.56 28.38 14.77 28.3 14.93 28.14C15.25 27.83 15.25 27.32 14.93 27.01L1.96 14.19Z"
+                                                    fill="#2F3035" fill-opacity="1.000000" fill-rule="nonzero" />
+                                            </svg>
+
+
+                                        </button>
+                                        <button class="splide__arrow splide__arrow--next" type="button"
+                                            aria-label="Next slide" aria-controls="splide01-track">
+                                            <svg width="15.181641" height="28.386375" viewBox="0 0 15.1816 28.3864"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <desc>
+                                                    Created with Pixso.
+                                                </desc>
+                                                <defs />
+                                                <path id="Vector"
+                                                    d="M13.21 14.19L0.23 27.01C-0.08 27.32 -0.08 27.83 0.23 28.14C0.55 28.46 1.07 28.46 1.38 28.14L14.94 14.75C15.26 14.44 15.26 13.93 14.94 13.62L1.38 0.23C1.23 0.08 1.02 0 0.81 0C0.61 0 0.4 0.07 0.24 0.23C-0.08 0.55 -0.08 1.05 0.24 1.37L13.21 14.19Z"
+                                                    fill="#2F3035" fill-opacity="1.000000" fill-rule="nonzero" />
+                                            </svg>
+
+                                        </button>
+                                    </div>
+                                    <div class="splide__track">
+
+                                        <ul class="splide__list">
+                                            <li class="splide__slide">
+                                                <div class="product-item__wrapper product-item__not-available">
+                                                    <button type="button"
+                                                        class="product-item__favorite favorite-btn"></button>
+                                                    <button class="product-item__basket">
+
+                                                    </button>
+                                                    <a class="product-item__notify-link" href="#">
+                                                        <span>Сообщить о поступлении</span> </a>
+                                                    <a class="product-item product-item--sale " href="#">
+                                                        <p class="product-item__hover-text">посмотреть товар</p>
+                                                        <img class="product-item__img"
+                                                            src="images/content/products-popular-1.png" alt="">
+                                                        <h4 class="product-item__title">BRP Audio-портативная система
+                                                        </h4>
+                                                        <p class=" price product-item__price">9 800 ₽</p>
+                                                        <p class="product-item__notify-text">нет в наличии</p>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="splide__slide">
+                                                <div class="product-slider__item">
+                                                    <div class="product-item__wrapper ">
+                                                        <button type="button"
+                                                            class="product-item__favorite favorite-btn"></button>
+                                                        <button class="product-item__basket">
+
+                                                        </button>
+                                                        <a class="product-item__notify-link" href="#">
+                                                            <span>Сообщить о поступлении</span> </a>
+                                                        <a class="product-item" href="#">
+                                                            <p class="product-item__hover-text">посмотреть товар</p>
+                                                            <img class="product-item__img"
+                                                                src="images/content/products-popular-2.png" alt="">
+                                                            <h4 class="product-item__title">Garmin Echomap Plus 62cv
+                                                            </h4>
+                                                            <p class=" price product-item__price">45 800 ₽</p>
+                                                            <p class="product-item__notify-text">нет в наличии</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="splide__slide">
+                                                <div class="product-slider__item">
+                                                    <div class="product-item__wrapper product-item__not-available">
+                                                        <button type="button"
+                                                            class="product-item__favorite favorite-btn"></button>
+                                                        <button class="product-item__basket">
+
+                                                        </button>
+                                                        <a class="product-item__notify-link" href="#">
+                                                            <span>Сообщить о поступлении</span> </a>
+                                                        <a class="product-item product-item--sale " href="#">
+                                                            <p class="product-item__hover-text">посмотреть товар</p>
+                                                            <img class="product-item__img"
+                                                                src="images/content/products-popular-3.png" alt="">
+                                                            <h4 class="product-item__title">
+                                                                RF D.E.S.S.TM Key</h4>
+                                                            <p class=" price product-item__price">68 000 ₽</p>
+                                                            <p class="product-item__notify-text">нет в наличии</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="splide__slide">
+                                                <div class="product-slider__item">
+                                                    <div class="product-item__wrapper product-item__not-available">
+                                                        <button type="button"
+                                                            class="product-item__favorite favorite-btn"></button>
+                                                        <button class="product-item__basket">
+
+                                                        </button>
+                                                        <a class="product-item__notify-link" href="#">
+                                                            <span>Сообщить о поступлении</span> </a>
+                                                        <a class="product-item " href="#">
+                                                            <p class="product-item__hover-text">посмотреть товар</p>
+                                                            <img class="product-item__img"
+                                                                src="images/content/products-popular-4.png" alt="">
+                                                            <h4 class="product-item__title">Мужской костюм
+                                                                3мм</h4>
+                                                            <p class=" price product-item__price">7 000 ₽</p>
+                                                            <p class="product-item__notify-text">нет в наличии</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="splide__slide">
+                                                <div class="product-item__wrapper product-item__not-available">
+                                                    <button type="button"
+                                                        class="product-item__favorite favorite-btn"></button>
+                                                    <button class="product-item__basket">
+
+                                                    </button>
+                                                    <a class="product-item__notify-link" href="#">
+                                                        <span>Сообщить о поступлении</span> </a>
+                                                    <a class="product-item product-item--sale " href="#">
+                                                        <p class="product-item__hover-text">посмотреть товар</p>
+                                                        <img class="product-item__img"
+                                                            src="images/content/products-popular-1.png" alt="">
+                                                        <h4 class="product-item__title">BRP Audio-портативная система
+                                                        </h4>
+                                                        <p class=" price product-item__price">9 800 ₽</p>
+                                                        <p class="product-item__notify-text">нет в наличии</p>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="splide__slide">
+                                                <div class="product-slider__item">
+                                                    <div class="product-item__wrapper ">
+                                                        <button type="button"
+                                                            class="product-item__favorite favorite-btn"></button>
+                                                        <button class="product-item__basket">
+
+                                                        </button>
+                                                        <a class="product-item__notify-link" href="#">
+                                                            <span>Сообщить о поступлении</span> </a>
+                                                        <a class="product-item" href="#">
+                                                            <p class="product-item__hover-text">посмотреть товар</p>
+                                                            <img class="product-item__img"
+                                                                src="images/content/products-popular-2.png" alt="">
+                                                            <h4 class="product-item__title">Garmin Echomap Plus 62cv
+                                                            </h4>
+                                                            <p class=" price product-item__price">45 800 ₽</p>
+                                                            <p class="product-item__notify-text">нет в наличии</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- 
+                                <div class="product-slider">
+
+                                    <div class="product-slider__item">
+                                        <div class="product-item__wrapper product-item__not-available">
+                                            <button class="product-item__favorite favorite-btn"></button>
+                                            <button class="product-item__basket">
+
+                                            </button>
+                                            <a class="product-item__notify-link" href="#">
+                                                <span>Сообщить о поступлении</span> </a>
+                                            <a class="product-item product-item--sale " href="#">
+                                                <p class="product-item__hover-text">посмотреть товар</p>
+                                                <img class="product-item__img"
+                                                    src="images/content/products-popular-1.png" alt="">
+                                                <h4 class="product-item__title">BRP Audio-портативная система</h4>
+                                                <p class=" price product-item__price">9 800 ₽</p>
+                                                <p class="product-item__notify-text">нет в наличии</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product-slider__item">
+                                        <div class="product-item__wrapper ">
+                                            <button class="product-item__favorite favorite-btn"></button>
+                                            <button class="product-item__basket">
+
+                                            </button>
+                                            <a class="product-item__notify-link" href="#">
+                                                <span>Сообщить о поступлении</span> </a>
+                                            <a class="product-item" href="#">
+                                                <p class="product-item__hover-text">посмотреть товар</p>
+                                                <img class="product-item__img"
+                                                    src="images/content/products-popular-2.png" alt="">
+                                                <h4 class="product-item__title">Garmin Echomap Plus 62cv
+                                                </h4>
+                                                <p class=" price product-item__price">45 800 ₽</p>
+                                                <p class="product-item__notify-text">нет в наличии</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product-slider__item">
+                                        <div class="product-item__wrapper product-item__not-available">
+                                            <button class="product-item__favorite favorite-btn"></button>
+                                            <button class="product-item__basket">
+
+                                            </button>
+                                            <a class="product-item__notify-link" href="#">
+                                                <span>Сообщить о поступлении</span> </a>
+                                            <a class="product-item product-item--sale " href="#">
+                                                <p class="product-item__hover-text">посмотреть товар</p>
+                                                <img class="product-item__img"
+                                                    src="images/content/products-popular-3.png" alt="">
+                                                <h4 class="product-item__title">
+                                                    RF D.E.S.S.TM Key</h4>
+                                                <p class=" price product-item__price">68 000 ₽</p>
+                                                <p class="product-item__notify-text">нет в наличии</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product-slider__item">
+                                        <div class="product-item__wrapper product-item__not-available">
+                                            <button class="product-item__favorite favorite-btn"></button>
+                                            <button class="product-item__basket">
+
+                                            </button>
+                                            <a class="product-item__notify-link" href="#">
+                                                <span>Сообщить о поступлении</span> </a>
+                                            <a class="product-item " href="#">
+                                                <p class="product-item__hover-text">посмотреть товар</p>
+                                                <img class="product-item__img"
+                                                    src="images/content/products-popular-4.png" alt="">
+                                                <h4 class="product-item__title">Мужской костюм
+                                                    3мм</h4>
+                                                <p class=" price product-item__price">7 000 ₽</p>
+                                                <p class="product-item__notify-text">нет в наличии</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                            <div class="tabs-content products__content" id="products-popular-tab-2">
+
+                            </div>
+                            <div class="tabs-content tabs-content--active products__content products__content--active"
+                                id="products-popular-tab-3">
+                            </div>
+                            <div class="tabs-content products__content" id="products-popular-tab-4">
+                            </div>
+                            <div class="tabs-content products__content" id="products-popular-tab-5">
+                            </div>
+                            <div class="tabs-content products__content" id="products-popular-tab-6">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__top">
+                    <div class="footer__top-inner">
+                        <div class="footer__top-item footer__top-newslatter">
+                            <h6 class="footer__top-title">Подпишитесь на нашу рассылку
+                                и узнавайте о акциях быстрее
+                            </h6>
+                            <form class="footer-form">
+                                <input class="footer-form__input" type="email" placeholder="Введите ваш e-mail:">
+                                <button class="footer-form__btn" type="submit">Отправить</button>
+                            </form>
+                        </div>
+                        <div class="footer__top-item footer__top-itemdrop">
+                            <h6 class="footer__top-title footer__topdrop">Информация</h6>
+                            <ul class="footer-list">
+                                <li class="footer-list__item"><a href="#">О компании</a></li>
+                                <li class="footer-list__item"><a href="#">Контакты</a></li>
+                                <li class="footer-list__item"><a href="#">Акции</a></li>
+                                <li class="footer-list__item"><a href="#">Магазины</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__top-item">
+                            <h6 class="footer__top-title footer__topdrop">Интернет-магазин</h6>
+                            <ul class="footer-list">
+                                <li class="footer-list__item"><a href="#">Доставка и самовывоз</a></li>
+                                <li class="footer-list__item"><a href="#">Оплата</a></li>
+                                <li class="footer-list__item"><a href="#">Возврат-обмен</a></li>
+                                <li class="footer-list__item"><a href="#">Новости</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__top-item footer__top-social">
+
+                            <ul class="social-list">
+                                <li class="social-list__item">
+                                    <a class="social-list__item-link" href="#">
+                                        <img class="social-list__item-img" src="images/instagram.svg" alt="instagram">
+                                    </a>
+                                </li>
+                                <li class="social-list__item">
+                                    <a class="social-list__item-link" href="#">
+                                        <img class="social-list__item-img" src="images/vk.svg" alt="vk">
+                                    </a>
+                                </li>
+                                <li class="social-list__item">
+                                    <a class="social-list__item-link" href="#">
+                                        <img class="social-list__item-img" src="images/fb.svg" alt="fb">
+                                    </a>
+                                </li>
+                                <li class="social-list__item">
+                                    <a class="social-list__item-link" href="#">
+                                        <img class="social-list__item-img" src="images/youtube.svg" alt="youtube">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <a class="footer__bottom-link" href="#">Договор оферты</a>
+                    <a class="footer__bottom-link" href="#">Политика обработки персональных данных</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
